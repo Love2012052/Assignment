@@ -1,0 +1,512 @@
+/*------------------------------Universal CSS------------------------------*/
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/*------------------------------Template 1 CSS------------------------------*/
+
+.highlightsdiv {
+  background-color: rgb(50, 50, 50);
+  padding: 40px 40px 0px;
+}
+.highlightsheading {
+  padding: 30px 0px;
+  color: white;
+  text-align: center;
+}
+hr {
+  box-shadow: 0 -10px 7px -7px grey inset;
+}
+.outerbox {
+  padding: 30px 0px;
+  display: flex;
+  justify-content: center;
+}
+.innerbox {
+  width: 850px;
+}
+.box {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.boxinner {
+  background-color: white;
+  border-radius: 4px;
+  height: 100px;
+  padding: 0px 10px;
+  color: rgb(50, 50, 50);
+  display: flex;
+}
+.leftbox {
+  width: 64%;
+  padding: 20px;
+}
+.boxheading {
+  padding-bottom: 6px;
+}
+.boxcontent {
+  color: grey;
+}
+.rightbox {
+  width: 36%;
+  font-size: 0px;
+}
+
+/*------------------------------Responsive Screen Size Breakpoints------------------------------*/
+
+@media screen and (max-width: 768px) {
+  .innerbox {
+    width: 400px;
+  }
+  .box {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .highlightsdiv {
+    padding: 30px 20px;
+  }
+  .highlightsheading {
+    padding: 20px 0px;
+    font-size: 22px;
+  }
+  .boxinner {
+    height: 90px;
+  }
+  .leftbox {
+    width: 60%;
+    padding: 10px;
+  }
+  .boxheading {
+    font-size: 16px;
+  }
+  .boxcontent {
+    font-size: 12px;
+  }
+  .rightbox {
+    width: 40%;
+  }
+}
+
+/*------------------------------Template 2 CSS------------------------------*/
+
+.coursesdiv {
+  background-color: rgba(182, 215, 235, 0.039);
+  padding: 30px;
+}
+.coursesheading {
+  padding: 10px;
+  text-align: center;
+}
+.coursespara1 {
+  padding: 10px 100px;
+}
+.coursespara2 {
+  padding: 0px 100px 20px;
+}
+.coursesleft {
+  height: 457px;
+  width: 60%;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  vertical-align: top;
+}
+.forleft {
+  height: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.imagediv {
+  height: 400px;
+  width: 100%;
+  font-size: 0px;
+}
+.borderimage {
+  border-radius: 20px;
+}
+.coursescenter {
+  height: 457px;
+  width: 20%;
+  display: inline-block;
+  position: relative;
+  right: 100px;
+  z-index: 2;
+  vertical-align: top;
+}
+.forcenter {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coursesright {
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+}
+.forright {
+  display: flex;
+  justify-content: left;
+}
+.rightinside {
+  background-color: white;
+  border-radius: 10px;
+  width: 200px;
+  padding: 14px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.reddiv {
+  padding: 10px 0px;
+}
+.redheading {
+  border-bottom: 1px dotted rgb(233, 6, 67);
+  color: rgb(233, 6, 67);
+}
+.namediv {
+  border-bottom: 1px solid grey;
+  padding: 4px 20px;
+  display: flex;
+  justify-content: left;
+}
+.leftname {
+  height: 40px;
+  width: 70px;
+  font-size: 0px;
+}
+.rightname {
+  width: 60px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/*------------------------------Responsive Screen Size Breakpoints------------------------------*/
+
+@media screen and (max-width: 1200px) {
+  .coursesleft {
+    width: 44%;
+  }
+  .imagediv {
+    height: 380px;
+  }
+  .coursescenter {
+    width: 28%;
+  }
+  .coursesright {
+    width: 28%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .coursespara1 {
+    padding: 10px 40px;
+  }
+  .coursespara2 {
+    padding: 0px 40px 20px;
+  }
+  .coursesleft {
+    width: 100%;
+    position: static;
+  }
+  .forleft {
+    justify-content: center;
+  }
+  .imagediv {
+    width: 600px;
+  }
+  .coursescenter {
+    width: 50%;
+    position: static;
+  }
+  .coursesright {
+    width: 50%;
+  }
+  .forright {
+    justify-content: center;
+  }
+  .rightinside {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .coursespara1 {
+    padding: 10px 0px;
+  }
+  .coursespara2 {
+    padding: 0px 0px 20px;
+  }
+  .imagediv {
+    width: 500px;
+  }
+  .rightinside {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .coursesheading {
+    font-size: 22px;
+  }
+  .coursespara1 {
+    font-size: 12px;
+  }
+  .coursespara2 {
+    font-size: 12px;
+  }
+  .coursesdiv {
+    padding: 18px;
+  }
+  .coursesleft {
+    height: 280px;
+  }
+  .imagediv {
+    height: 220px;
+    width: 320px;
+  }
+  .coursescenter {
+    height: 380px;
+    width: 100%;
+    position: static;
+  }
+  .coursesright {
+    width: 100%;
+  }
+  .rightinside {
+    width: 220px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .imagediv {
+    height: 200px;
+    width: 280px;
+  }
+}
+
+/*------------------------------Template 3 CSS------------------------------*/
+
+.scopesdiv {
+  background-color: bisque;
+  padding: 40px 90px 80px;
+}
+.headingouter {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+.scopesheading {
+  border-left: 5px solid rgb(255, 153, 0);
+  width: 260px;
+  padding: 0px 40px;
+  text-align: center;
+}
+.scopesparagraph {
+  padding: 0px 110px 30px;
+}
+.innerscopesdiv {
+  width: 25%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.iconsscopes {
+  background-color: rgb(50, 50, 50);
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 36px;
+  width: 64px;
+  color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 20px;
+  left: -14px;
+}
+.iconsbox {
+  background-color: white;
+  border-radius: 10px;
+  padding: 14px 28px;
+  text-align: center;
+  box-shadow: 12px 12px 2px 1px rgb(117, 73, 19);
+}
+.domainheading {
+  padding-bottom: 10px;
+}
+.scopespara {
+  line-height: 20px;
+  font-size: 12px;
+}
+
+/*------------------------------Responsive Screen Size Breakpoints------------------------------*/
+
+@media screen and (max-width: 1200px) {
+  .scopesdiv {
+    padding: 40px 40px 60px;
+  }
+  .scopesheading {
+    width: 280px;
+    font-size: 28px;
+  }
+  .scopesparagraph {
+    padding: 0px 70px 30px;
+  }
+  .iconsscopes {
+    height: 32px;
+    width: 52px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .scopesheading {
+    font-size: 26px;
+  }
+  .scopesparagraph {
+    padding: 0px 40px 30px;
+    font-size: 12px;
+  }
+  .outerscopesdiv {
+    padding: 0px 100px;
+  }
+  .innerscopesdiv {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .outerscopesdiv {
+    padding: 0px 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .scopesdiv {
+    padding: 20px 20px 30px;
+  }
+  .scopesheading {
+    width: 80%;
+    font-size: 22px;
+  }
+  .scopesparagraph {
+    padding: 0px 0px 30px;
+  }
+  .outerscopesdiv {
+    padding: 0px 90px;
+  }
+  .innerscopesdiv {
+    width: 100%;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .outerscopesdiv {
+    padding: 0px 40px;
+  }
+}
+
+/*------------------------------Template 4 CSS------------------------------*/
+
+.studydiv {
+  background-color: rgb(24, 24, 24);
+  padding: 30px;
+}
+.topstudyheading {
+  padding: 10px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 5px 5px bisque;
+}
+.diffouter {
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+}
+.diffinner {
+  width: 80%;
+}
+.diffheading {
+  display: flex;
+}
+.detailsheading {
+  background-color: bisque;
+  width: 28%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.topleft {
+  border-top-left-radius: 20px;
+}
+.topright {
+  border-top-right-radius: 20px;
+}
+.bottomleft {
+  border-bottom-left-radius: 20px;
+}
+.bottomright {
+  border-bottom-right-radius: 20px;
+}
+.studyheading {
+  background-color: white;
+  width: 36%;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.653) 0px 5px 15px;
+  box-sizing: border-box;
+}
+.detailsheadinghr {
+  background-color: bisque;
+  width: 28%;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+.studyheadinghr {
+  background-color: white;
+  width: 36%;
+  padding: 0px 20px;
+  box-sizing: border-box;
+}
+
+/*------------------------------Responsive Screen Size Breakpoints------------------------------*/
+
+@media screen and (max-width: 992px) {
+  .topstudyheading {
+    font-size: 28px;
+  }
+  .diffinner {
+    width: 86%;
+  }
+  .headingfont {
+    font-size: 18px;
+  }
+  .contentfont {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .studydiv {
+    padding: 20px;
+  }
+  .topstudyheading {
+    font-size: 22px;
+  }
+  .diffinner {
+    width: 90%;
+  }
+  .detailsheading {
+    padding: 14px;
+  }
+  .headingfont {
+    font-size: 16px;
+  }
+  .studyheading {
+    padding: 14px;
+  }
+  .contentfont {
+    font-size: 10px;
+  }
+  .detailsheadinghr {
+    padding: 0px 14px;
+  }
+  .studyheadinghr {
+    padding: 0px 14px;
+  }
+}
